@@ -1,0 +1,8 @@
+{
+  "name": "Neo Chat",
+  "short_name": "NeoChat",
+  "start_url": "/chat.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "gcm_sender_id": "136827168912"
+}

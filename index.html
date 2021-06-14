@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NeoChat- Home</title>
+	<link rel="shortcut icon" href="./img/icon.png" type="image/png" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/index.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+	overflow-x: hidden;
+}
+
+body {
+	scroll-behavior: smooth;
+	background-color: #fff;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: poppins;
+}
+
+.perks {
+	color: black;
+	font-size: 15px;
+}
+
+.bgf {
+	text-align: center;
+	text-decoration-color: white;
+}
+
+.section-title {
+	color: #6E17DB;
+	font-weight: bold;
+	font-size: 50px;
+	background: -webkit-linear-gradient(#6E17DB, #E3419E, #EABB63);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.perks-content {
+	padding-left: 90px;
+}
+
+.flex {
+ /*Flexbox for containers*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.waves {
+	position: relative;
+	width: 100%;
+	height: 15vh;
+	margin-bottom: -7px;
+ /*Fix for safari gap*/
+	min-height: 100px;
+	max-height: 150px;
+}
+
+.content {
+	position: relative;
+	height: 20vh;
+	text-align: center;
+	background-color: #6E17DB;
+}
+
+/* Animation */
+
+.parallax > use {
+	animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+
+.parallax > use:nth-child(1) {
+	animation-delay: -2s;
+	animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+	animation-delay: -3s;
+	animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+	animation-delay: -4s;
+	animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+	animation-delay: -5s;
+	animation-duration: 20s;
+}
+
+@keyframes move-forever {
+	0% {
+		transform: translate3d(-90px,0,0);
+	}
+
+	100% {
+		transform: translate3d(85px,0,0);
+	}
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+	.waves {
+		height: 40px;
+		min-height: 40px;
+	}
+
+	.content {
+		height: 30vh;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+}
+
+.main-content {
+	color: black;
+}
+
+.section-content {
+	color: black;
+	padding-left: 70px;
+}
+
+a,p,
+.display-6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.display-light {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.text-main {
+	color: #694ea1;
+}
+
+.bg-main {
+	background-color: #3d4042;
+}
+
+.bg-main:hover,
+.bg-main:active,
+.bg-main:focus {
+	background-color: #694ea1;
+}
+
+.button {
+	border-radius: 30px;
+	width: 200px;
+	height: 50px;
+	border: none;
+	background: linear-gradient(45deg, #6E17DB, #E3419E, #EABB63);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.bg-light-main {
+	background-color: #6a4ea123;
+	height: 600px;
+}
+
+.navbar-style {
+	justify-content: left;
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.navbar-title {
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: poppins;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+.logo {
+	margin-left: 0px;
+	padding-right: 600px;
+}
+
+.perks-title {
+	color: white;
+	padding-left: 70px;
+}
+
+.perks-explain {
+	color: whitesmoke;
+	padding-left: 70px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.top {
+	background-color: #6E17DB;
+	align-items: center;
+	padding-left: 1050px;
+}
+</style>
+
+<body>
+	<a id="top">
+		<!--script that adds the navbar-->
+		 <nav class="navbar static-top bg-white sticky-top">
+        <div class="navbar-style">
+            <a class="logo navbar-brand d-flex align-items-center" href="/">
+                <img src="./img/icon.png" height="40" width="auto">
+                <span class="ml-3 text-dark">NeoChat</span>
+            </a>
+            <div class="d-flex align-items-center navbar-title">
+                <a href="#features" class="text-dark d-none d-md-block">
+                    Features
+                </a>
+            </div>
+            <div class="d-flex align-items-center navbar-title">
+                <a href="#about" class="text-dark d-none d-md-block">
+                    About
+                </a>
+            </div>
+            <div class="d-flex align-items-center navbar-title">
+                <a href="/app/chat.html" class="text-dark d-none d-md-block">
+                    Enter Chat
+                </a>
+            </div>
+        </div>
+    </nav>
+		<!--landup page here!-->
+		<div class="bg-light-main">
+			<div class="container py-5">
+				<div class="d-flex row align-items-center justify-items-center mh-100">
+					<div class="col-sm-12 col-md-7 px-5 mt-3">
+						<h1 class="display-4 font-weight-light" data-aos="fade-in" data-aos-delay="100">
+                        <span class="text-main font-weight-bold">NeoChat</span>
+                    </h1>
+						<h3 class="main-content" data-aos="fade-in" data-aos-delay="600"> Instant, web-based, high-performant group chat app </h3>
+            <br><br><hr>
+            <h1 data-aos="fade-in" data-aos-delay="800">Version Beta 1.1 is here</h1>
+            <h4><a href="/docs/version.html" data-aos="fade-in" data-aos-delay="900">See what's new</a></h4>
+						<div>
+							<a href="/app/chat.html" target="_blank" data-aos-delay="1000" data-aos="fade-bottom">
+              <br>
+								<button class="button" style="color:white">Launch in browser</button>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-5" data-aos="fade-left"> <img class="img-fluid d-none d-md-block" src="./img/logo.png"> </div>
+				</div>
+			</div>
+		</div>
+	</a>
+  <br><br><br><br>
+	<a id="about">
+		<br>
+		<div data-aos="fade-up">
+			<h1 class="section-title"> About NeoChat</h1>
+			<div class="row mt-2">
+				<div class="align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+					<div>
+						<h5 class="section-content">NeoChat is a web-based FOSS group chat app. Work is actively in progress.</h5> </div>
+				</div>
+			</div>
+	</a>
+	<br><br><br><br>
+	<br>
+    <style>
+    .col-lg-4 col-md-6 d-flex align-items-stretch{
+      position: absolute;
+    }
+    </style>
+    <div class="container mt-5" data-aos="fade-up">
+        
+    </div>
+	<a id="features">
+		<br>
+		<div data-aos="fade-up">
+			<h1 class="section-title"> Features </h1>
+			<div class="row mt-2">
+				<div class="align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+
+					<div class="perks">
+						<p class="perks-content">
+                   • Unlimited messaging
+							<br> • Secured Google account log in
+							<br> • Images upload
+							<br> • (Coming soon) Emojis
+							<br> • (v2.0) Reactions
+							<br> • (v2.0) Account & Personalization
+							<br> • (v2.1) Channels
+							<br> • (v2.1) Direct Private Messaging
+						</p>
+					</div>
+				</div>
+			</div>
+	</a>
+  <br><br><br><br>
+	<!--footer-->
+	<div>
+		<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+			<defs>
+				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /> </defs>
+			<g class="parallax">
+				<use xlink:href="#gentle-wave" x="48" y="3" fill="#EABB63" />
+				<use xlink:href="#gentle-wave" x="48" y="5" fill="#E3419E" />
+				<use xlink:href="#gentle-wave" x="48" y="7" fill="#6E17DB" /> </g>
+		</svg>
+	</div>
+	<!--Waves end-->
+	<!--Content starts-->
+	<div class="content flex" style="color:white">
+		<p>Made with <i class="fa fa-heart text-danger px-2"></i> by GFlyDream<i class=" px-2 fa fa-users text-white"></i></p>
+	</div>
+	<!--scripts-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://kit.fontawesome.com/a3f929b7cc.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	</script>
+	<script type="module" src="./js/main.js"></script>
+	<script>
+	AOS.init({
+		duration: 700,
+		offset: 180
+	});
+	</script>
+	<div class="top"><a style="color: white" href="#top">Go to top</a></div>
+</body>
+
+</html>
