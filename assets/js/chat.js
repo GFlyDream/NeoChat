@@ -69,7 +69,7 @@ function saveMessage(messageText) {
 // Loads chat messages history and listens for upcoming ones.
 function loadMessages() {
   // Create the query to load the last 12 messages and listen for new ones.
-  var query = firebase.firestore().collection('messages').orderBy('timestamp', 'desc').limit(12);
+  var query = firebase.firestore().collection('messages').orderBy('timestamp', 'desc');
   
   // Start listening to the query.
   query.onSnapshot(function(snapshot) {
@@ -307,7 +307,7 @@ function displayMessage(id, timestamp, name, text, picUrl, imageUrl) {
     div.querySelector('.pic').style.backgroundImage = 'url(' + addSizeToGoogleProfilePic(picUrl) + ')';
   }
 
-  div.querySelector('.name').textContent = name;
+  div.querySelector('.name').textContent = name ;
   var messageElement = div.querySelector('.message');
 
   if (text) { // If the message is text.
